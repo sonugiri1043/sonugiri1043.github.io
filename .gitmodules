@@ -4,9 +4,3 @@
 [submodule "normalize.css"]
 	path = dep/normalize.css
 	url = https://github.com/necolas/normalize.css/
-[submodule "dep/normalize.css"]
-	path = dep/normalize.css
-	url = https://github.com/necolas/normalize.css.git
-[submodule "dep/Font-Awesome"]
-	path = dep/Font-Awesome
-	url = https://github.com/FortAwesome/Font-Awesome.git
