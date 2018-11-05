@@ -1,1 +1,1 @@
-# sonugiri1043.github.io
+A single-page resume done purely with HTML and CSS.
