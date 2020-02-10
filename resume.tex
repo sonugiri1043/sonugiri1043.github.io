@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in Latex
+% Author : Sonu Giri
+% Website: https://github.com/sonugiri1043/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/sonugiri/}{\Large Sonu Giri}} & Email : \href{mailto:sonugiri1043@gmail.com}{sonugiri1043@gmail.com}\\
+  \href{https://sonugiri1043.github.io/}{https://sonugiri1043.github.io/} & Mobile : +91 8884906153 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Ropar}{Punjab, India}
+      {B. Tech in Computer Science;  CGPA: 9.37}{Aug. 2009 -- April 2013}
+    \resumeSubheading
+      {Army School, Kota}{Rajasthan, India}
+      {Intermediate;  Percentage: 94.4 }{ 2008 }
+    \resumeSubheading
+      {Army School, Roorkee}{Uttrakhand, India}
+      {High School; Percentage 90.4}{2006}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Arista Networks}{Bangalore, India}
+      {Software Engineer}{July 2013 - Present}
+      \resumeItemListStart
+        \resumeItem{CloudDeploy}
+          {Automatic provisioning of routers in public cloud. Used terraform to automate creation of VPC, Routers and hosts in public cloud (AWS and Azure). Wrote the arista terraform provider and terraform scripts.}
+        \resumeItem{Traffic Classification Library}
+          {Worked in a team of 2 people to create a library that does traffic classification based on 5 tuple(src/dst IP, src/dst port and protocol). Involves creating a module which does classification. Used bess.}
+        \resumeItem{License Management}
+          {Added support for License file replication across HA cluster. Also added license enforcement to licensed features.}
+        \resumeItem{File Replication Library}
+          {Helped in creation of file replication library which replicates file[s] from source to destination whenever there is a change to a file. Used 'inotify' and 'rsync' utilities internally. It offers various modes of replication like periodic, inotify mode.}
+        \resumeItem{Zone Based Firewall}
+          {An Iptables based Firewall on linux platform. Groups together interfaces or subnets to create a zone and applies policy across zones.}
+        \resumeItem{Traffic Mirroring}
+          {Used Iptables and linux 'tc' utility to create Traffic mirroring solution for linux based router.}
+        \resumeItem{Flow Sampler on Linux}
+          {Used Iptables to create a flow sampler on a linux based platform.}
+        \resumeItem{IP Path Tracer for O.A.M.}
+          {.Implemented a IP Path Tracer for Operation and Management (OAM). OAM functions are important for fault management and performance monitoring. Based on OpenFlow and VXLAN.}
+        \resumeItem{Audio Video Bridging Test Infra}
+          {Used Intel open sourced open-AVB code to develop test infra for Arista AVB feature. At high level, this involved modifying intel's code to suit Arista's needs, creating different network namespaces to simulate test device and providing network connectivity to them.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Other Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Landscape Simulator}
+      {Created an open-source tool to generate 2D Natural and Urban Landscape for testing ecological theories. It involved using machine learning techniques to learn from real data and use it to generate artificial landscape.
+      Code: https://github.com/SonuGiriIITP/landscapeSim}
+    \resumeSubItem{Voice Assistant}
+      {Worked in a team of 4 people to create voice assistant that takes voice as input, performs some operation on user's commands and give the result in text and audio.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C, C++, Python, GoLang}
+     \hfill
+     \textbf{Technologies}{: Terraform, Docker, kubernetes, AWS}
+     }
+     \item{
+     \textbf{Project Management}{: Git, Perforce, Reviewboard, Gerrit}
+    }
+    \item{
+     \textbf{Have some understanding of Machine Learning, convolutional neural network}
+    }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
