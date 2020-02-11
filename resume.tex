@@ -77,6 +77,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.linkedin.com/in/sonugiri/}{\Large Sonu Giri}} & Email : \href{mailto:sonugiri1043@gmail.com}{sonugiri1043@gmail.com}\\
   \href{https://sonugiri1043.github.io/}{https://sonugiri1043.github.io/} & Mobile : +91 8884906153 \\
+  \href{https://www.linkedin.com/in/sonugiri/}{https://www.linkedin.com/in/sonugiri/} \\
 \end{tabular*}
 
 
@@ -102,19 +103,24 @@
     \resumeSubheading
       {Arista Networks}{Bangalore, India}
       {Software Engineer}{July 2013 - Present}
+      
+      \begin{flushleft}Worked on several broad areas of Arista's EOS, which is a Linux based Operating System which runs on Arista switches. Been a regular trainer/mentor for the new joiners and interns. Helped in release management.
+      
+      Some relevant projects taken at Arista are listed below:
+      \end{flushleft}
       \resumeItemListStart
         \resumeItem{CloudDeploy}
-          {Automatic provisioning of routers in public cloud. Used terraform to automate creation of VPC, Routers and hosts in public cloud (AWS and Azure). Wrote the arista terraform provider and terraform scripts.}
+          {Lead the client component in automatic provisioning of routers in public cloud. Used terraform to automate creation of VPC, Routers and hosts in public cloud (AWS and Azure). Wrote the arista terraform provider and terraform scripts.}
         \resumeItem{Traffic Classification Library}
-          {Worked in a team of 2 people to create a library that does traffic classification based on 5 tuple(src/dst IP, src/dst port and protocol). Involves creating a module which does classification. Used bess.}
-        \resumeItem{License Management}
+          {Lead the effort to create a library that does traffic classification based on 5 tuple(src/dst IP, src/dst port and protocol). Involves creating control plane and a data plane module which does classification.}
+        \resumeItem{HA for License Management}
           {Added support for License file replication across HA cluster. Also added license enforcement to licensed features.}
         \resumeItem{File Replication Library}
           {Helped in creation of file replication library which replicates file[s] from source to destination whenever there is a change to a file. Used 'inotify' and 'rsync' utilities internally. It offers various modes of replication like periodic, inotify mode.}
         \resumeItem{Zone Based Firewall}
-          {An Iptables based Firewall on linux platform. Groups together interfaces or subnets to create a zone and applies policy across zones.}
+          {An Iptables based Firewall on linux platform. Groups together interfaces/subnets to create a zone and applies policy across zones. Responsible for control plane.}
         \resumeItem{Traffic Mirroring}
-          {Used Iptables and linux 'tc' utility to create Traffic mirroring solution for linux based router.}
+          {Took entire responsibility for this feature end to end. Used Iptables and linux 'tc' utility to create Traffic mirroring solution for linux based router.}
         \resumeItem{Flow Sampler on Linux}
           {Used Iptables to create a flow sampler on a linux based platform.}
         \resumeItem{IP Path Tracer for O.A.M.}
@@ -141,7 +147,7 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: C, C++, Python, GoLang}
+     \textbf{Languages}{: C, C++, Python, GoLang, Java(Prior experience)}
      \hfill
      \textbf{Technologies}{: Terraform, Docker, kubernetes, AWS}
      }
